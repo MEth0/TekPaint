@@ -16,13 +16,14 @@ static size_t		get_char_width(t_bunny_font	*font,
 				       const char	*str,
 				       size_t		i)
 {
-  struct bunny_ttf_font	*ttf;
-  struct bunny_gfx_font	*gfx;
+  // struct bunny_ttf_font	*ttf;
+  // struct bunny_gfx_font	*gfx;
 
-  if ((ttf = (struct bunny_ttf_font*)font)->type == TTF_TEXT)
-    return (ttf->font.getGlyph(str[i], font->glyph_size.y, false, 1).advance + font->interglyph_space.x);
-  gfx = (struct bunny_gfx_font*)font;
-  return (gfx->glyph_size.x + font->interglyph_space.x);
+  // if ((ttf = (struct bunny_ttf_font*)font)->type == TTF_TEXT)
+  //   return (ttf->font.getGlyph(str[i], font->glyph_size.y, false, 1).advance + font->interglyph_space.x);
+  // gfx = (struct bunny_gfx_font*)font;
+  // return (gfx->glyph_size.x + font->interglyph_space.x);
+  (void)font, (void)str, (void)i;
 }
 
 static size_t		count_word(const char		*str,
@@ -179,9 +180,9 @@ void			_bunny_draw_text(t_bunny_font	*font)
     {
       struct bunny_ttf_font *fnt = (struct bunny_ttf_font*)font;
 
-      fnt->text.setOutlineThickness(fnt->outline_size);
-      fnt->text.setOutlineColor(bunny_color_to_sf_color(fnt->outline_color));
-      fnt->text.setFillColor(bunny_color_to_sf_color(fnt->color));
+      // fnt->text.setOutlineThickness(fnt->outline_size);
+      // fnt->text.setOutlineColor(bunny_color_to_sf_color(fnt->outline_color));
+      // fnt->text.setFillColor(bunny_color_to_sf_color(fnt->color));
     }
   else
     {

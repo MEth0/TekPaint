@@ -32,7 +32,6 @@
   COMPILER	?=	g++
 
   CONFIG	=	-W -Wall -fPIC						\
-			-Wno-unused-result					\
 			-DBUNNY_ALLOCATOR_DEACTIVATED
 
   DEBUG		=	-O0 -g -g3 -ggdb

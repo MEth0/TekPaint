@@ -42,7 +42,7 @@ LDFLAGS	=	-Lliblapin/ -llapin \
 		-lstdc++ -ldl \
 		-lm
 
-CFLAGS	+=	-W -Wall -O2
+CFLAGS	+=	-W -Wall
 CFLAGS	+=	-Iliblapin/include/ -I./include
 
 OBJ	=	$(SRC:.c=.o)
